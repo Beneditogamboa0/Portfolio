@@ -1294,3 +1294,37 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.projects-container .project {
+    display: flex;
+    flex-direction: column;
+    background-color: #040b14;
+    border-radius: 20px;
+    corner-shape: squircle;
+    color: white;
+}
+
+.projects-container img {
+    border-radius: 20px 20px 0 0;
+    height: 200px;
+    aspect-ratio: 1/1;
+    corner-shape: squircle;
+}
+
+.projects-container .project div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+.projects-container .project div>span:first-child{
+    font-size: 1.4rem;
+}
